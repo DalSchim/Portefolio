@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
 }
 
 $light: rgb(255, 255, 255);
@@ -14,11 +15,11 @@ body{
 
 
     header{
-        background-color: rgb(249, 216, 216);
         padding: 25px;
         display: flex;
         justify-content:space-around;
         align-items: center;
+        
         ul{
             display: flex;
             align-items: center;
@@ -30,7 +31,8 @@ body{
                     color: $dark;
                     text-decoration: none;
                     padding: 7px 0;
-                    font-size: 1,3rem;
+                    font-size: 20px;
+
 
                     &::after{
                         content: "";
@@ -65,7 +67,7 @@ body{
             text-decoration: none;
             color: $dark;
             border-radius: 90px;
-            border: solid 4px black;
+            border: solid 2px $dark;
             padding-top: 4px;
             padding-bottom: 4px;
             padding-left:7px;
@@ -75,18 +77,71 @@ body{
         .contact:hover{
         background-color: #59D7FF;
         color: $light;}
-           
-
-
             
-
-           
-
-        
-        
-
-
-            
-        
     }
+
+    main{
+        display: flex;
+        justify-content: center;
+        div{
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                background-color: rgb(185, 188, 190);
+                border-radius: 90%;
+                position: absolute;
+                width: auto 50%;
+                height: 80%;
+                bottom: 0;
+                transition: 0.4s;
+            }
+
+            img:hover{
+                width:  auto 60%;
+               height: 85%; 
+            }
+            
+
+            .info{
+                position: absolute;
+                bottom: 60%;
+                width: 10%;
+                left: 60%;
+                right: 10%;
+                height: 70px;
+                background-color: #59d8ff74;
+                border-radius: 20px;
+                transition: 0.4s;
+                font-size: 20px;
+
+                h2{
+                    opacity: 100%;
+                    color: $dark;
+                }
+            }
+       
+            .info:hover{
+                width: 15%;
+                height: 80px;
+                font-size: 30px;
+            }
+            
+       
+       
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
 } 
