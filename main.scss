@@ -4,63 +4,89 @@
     box-sizing: border-box;
 }
 
-$light:white;
+$light: rgb(255, 255, 255);
 $dark:black;
-$blue:#00f7ff;
+$blue:#59D7FF;
+
+body{
+    height: 100%;
+    width: 100%;
 
 
-header{
-    padding: 25px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    
-
-
-    ul{
+    header{
+        background-color: rgb(249, 216, 216);
+        padding: 25px;
         display: flex;
+        justify-content:space-around;
         align-items: center;
-        gap: 70px;
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            li{
+                list-style: none;
+                .link{
+                    position: relative;
+                    color: $dark;
+                    text-decoration: none;
+                    padding: 7px 0;
+                    font-size: 1,3rem;
 
-        li{
-            list-style: none;
-            
-            .link{
-                position: relative;
-                color: $dark;
-                text-decoration: none;
-                padding: 7px 0;
-                font-size: 1,3rem;
-
-                &::after{
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    width: 0%;
-                    left: 50%;
-                    height: 2px;
-                    background-color: $blue;
-                    transition: 0.4s ease-out;   
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        width: 0%;
+                        left: 50%;
+                        height: 2px;
+                        background-color: $blue;
+                        transition: 0.4s ease-out;   
                      
-                }
+                    }
 
-                &:hover::after{
+                    &:hover::after{
                     left: 0;
-                    width: 100%;
-                }
+                    width: 100%; 
+                    }
 
-                  
+
+                }
                 
-            
                 
+
             }
+        
+
+
             
         }
 
-       
-    
+        .contact{
+            text-decoration: none;
+            color: $dark;
+            border-radius: 90px;
+            border: solid 4px black;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left:7px;
+            padding-right:7px;
+           }
 
-    }
+        .contact:hover{
+        background-color: #59D7FF;
+        color: $light;}
+           
+
+
+            
+
+           
+
         
-}
+        
 
+
+            
+        
+    }
+} 
