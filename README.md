@@ -1,4 +1,4 @@
-#hellow welcom to my porfolio
+# hellow welcom to my porfolio
 
 
 ## how instal
