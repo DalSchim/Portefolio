@@ -14,10 +14,12 @@ body{
 
 
     header{
+        position: fixed;
         padding: 25px;
         display: flex;
         justify-content:space-between;
         align-items: center;
+        width: 100%;
         
         ul{
             background-color: rgba(237, 237, 237, 0.400);
@@ -42,12 +44,13 @@ body{
                     padding-right:5px;
                     
                     
+                    
 
 
                     &::after{
                         content: "";
                         position: absolute;
-                        bottom: 0;
+                        bottom: -5px;
                         width: 0%;
                         left: 50%;
                         height: 2px;
@@ -85,40 +88,68 @@ body{
            }
 
         .contact:hover{
-        background-color: #59d8ff74;
+        background-color: #59d8ffbd;
         color: white;}
             
     }
 
+
+
+
     main{
         display: flex;
         justify-content: center;
-        div{
-            align-items: center;
+        .photo{
+            
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
+            h3{
+                position: fixed;
+                bottom: 70%;
+                z-index:2;
+                left: 19%;
+                font-size: 25px;
+                
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    height: 2px;
+                    width: 100%;                    
+                    background-color: #59D7FF;
+                }
+
+            }
             img{
+                align-items: center;
                 background-color: rgb(185, 188, 190);
                 border-radius: 90%;
-                position: absolute;
+                position:fixed;
                 width: auto 50%;
                 height: 80%;
                 bottom: 0;
                 transition: 0.4s;
+                
             }
 
             img:hover{
+                box-shadow: 0px -30px 50px #59d8ffa8;
                 width:  auto 60%;
                height: 85%; 
             }
             
 
             .info{
+                display: flex;
+                align-items: center;
                 position: absolute;
+                justify-content: center;
                 bottom: 6%;
-                width: 10%;
+                width: auto;
                 right: 4%;
                 height: 70px;
                 background-color: #59d8ff74;
@@ -129,7 +160,9 @@ body{
                 h2{
                     opacity: 100%;
                     color: black;
-                    padding-left:4px ;
+                    padding-left:8px ;
+                    padding-right: 8px;
+                    width: auto;
                 }
 
                 #counter{
@@ -140,7 +173,7 @@ body{
             }
        
             .info:hover{
-                width: 15%;
+                width: auto 1px; 
                 height: 80px;
                 font-size: 30px;
             }
@@ -149,6 +182,24 @@ body{
        
         }
         
+
+
+        .projet{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 5;
+            background-color: rgba(0, 0, 0, 0.954);
+            img{
+                position: absolute;
+                z-index: 1;
+                top: 10px;
+                right: 10px;
+                width: 32px;
+            }
+            
+        }
 
     }
 
