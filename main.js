@@ -21,8 +21,6 @@ let whoiam= document.querySelector('.whoiam')
 /*projet*/
 ouvrir1.addEventListener('click', function() {
     projet.classList.toggle('open')
-
-
 });
 
 close1.addEventListener('click', function() {
@@ -49,4 +47,4 @@ ouvrir3.addEventListener('click', function() {
 
 close3.addEventListener('click', function() {
     whoiam.classList.remove('open')
-   });
+});
