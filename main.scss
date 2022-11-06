@@ -23,7 +23,6 @@ body{
         
         ul{
             background-color: rgba(237, 237, 237, 0.400);
-            
             display: flex;
             align-items: center;
             gap: 70px;
@@ -130,7 +129,7 @@ body{
                 border-radius: 90%;
                 position:fixed;
                 width: auto 50%;
-                height: 80%;
+                height: 70%;
                 bottom: 0;
                 transition: 0.4s;
                 
@@ -139,7 +138,7 @@ body{
             img:hover{
                 box-shadow: 0px -30px 50px #59d8ffa8;
                 width:  auto 60%;
-               height: 85%; 
+               height: 75%; 
             }
             
 
@@ -185,7 +184,7 @@ body{
 
         
             .projet {
-                
+                flex-direction: column;
                 position: absolute;
                 width: 0%;
                 height: 100vh;
@@ -194,6 +193,7 @@ body{
                 transition: 0.4s;
                 h2{
                     display: none;
+                    height: 32px;
                 }
                 .close1{
                     position: absolute;
@@ -201,6 +201,7 @@ body{
                     top: 10px;
                     right: 10px;
                     width: 32px;
+                    height: 32px;
                     cursor: pointer;
                 }
 
@@ -212,18 +213,48 @@ body{
                     transition: 0.4s;
                     h2{
                         display: block;
+                        
                     }
-                                        
+                    .grille{
+                        display: grid;
+                    }              
+                }
+
+
+                .grille{
+                    max-width: 1300px;
+                    width: 100%;
+                    height: auto;
+                    margin: auto;
+                    display: none;
+                    grid-template-columns: repeat(auto-fill, 300px) ;
+                    justify-content: center;
+                    grid-gap: 10px;
+                    color: black;
+                    .grid-item{
+                        border-radius: 25px;
+                        font-size: 24px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width:300px;
+                        background-color: white;
+                        .axe{
+                            width: 100%;
+                            border-radius: 25px;
+                        }
+                    }
                 }
 
             }
 
 
             .myskill {
-                
+                flex-direction: column;
                 position: absolute;
                 width: 0%;
-                height: 100vh;
+                height: 130vh;
                 z-index: 5;
                 background-color: rgba(0, 0, 0, 0.954);
                 transition: 0.4s;
@@ -251,13 +282,39 @@ body{
                     h2{
                         display: block;
                     }
-                                        
+                    .skill{
+                        display: grid;
+                    } 
+                                 
+                }
+
+                .skill{
+                    max-width: 1300px;
+                    width: 100%;
+                    height: auto;
+                    margin: auto;
+                    display: none;
+                    grid-template-columns: repeat(auto-fill, 300px) ;
+                    justify-content: center;
+                   
+                    grid-gap: 10px;
+                    .grid-skill{
+                        border-radius: 25px;
+                        font-size: 24px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width:300px;
+                        background-color: white;
+                        
+                    }
                 }
 
             }
 
             .whoiam {
-            
+                flex-direction: column;
                 position: absolute;
                 width: 0%;
                 height: 100vh;
@@ -270,16 +327,19 @@ body{
                 }
                 .me{
                     display: none;
-                    width: 50%;
-                    transition: 2s;
+                    
+                    
                     
                 }
                 
                 .e3{
+                    flex-wrap: wrap;
+                    justify-content: center;
                     display: flex;
                     align-items: center;
-                    width: 80%;
-                    
+                    width:100%;
+                    height: 100%;
+                    flex-direction: column;
                     
                 }
                 p{display: none;}
@@ -301,16 +361,22 @@ body{
                     color: white;
                     width: 100%;
                     transition: 0.4s;
+                    height: 100vh;
                     h2{
                         display: block;
                     }
                     .me{
                         display: block;
+                        height: 100%;
+                        transition: 2s;
+                        width:40%;
+                        height: auto;
                     }
-                    p{display: block;
-                    text-align: center;
-                    font-size: 50px;
-
+                    p{
+                        display: block;
+                        width: 50%;
+                        text-align: center;
+                        font-size: 50px;
                     }
                                         
                 }
@@ -333,3 +399,83 @@ body{
 
 
 } 
+
+@media only screen and (max-width: 800px){
+    
+    body{
+
+        
+    
+    
+        header{
+            position: fixed;
+            padding: 25px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width: 100%;
+            
+
+            ul{
+                gap: 2px;
+                flex-direction: column;
+                
+                li{
+                    list-style: none;
+                    padding-left:5px;
+                        padding-right:5px;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        font-size: 20px;
+                    .link{
+                        position: relative;
+                        color: black;
+                        text-decoration: none;
+                        padding-left:5px;
+                        padding-right:5px;
+                        cursor: pointer;
+                        
+                        
+                        
+    
+    
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -5px;
+                            width: 0%;
+                            left: 50%;
+                            height: 2px;
+                            background-color: #59D7FF;
+                            transition: 0.4s ease-out;   
+                         
+                        }
+    
+                        &:hover::after{
+                        left: 0;
+                        width: 100%; 
+                        }
+    
+    
+                    }
+                    
+                    
+    
+                }
+            
+    
+    
+                
+            }
+    
+            .contact{
+                display: none;
+            }
+                
+        }
+
+        
+
+    }
+
+}
