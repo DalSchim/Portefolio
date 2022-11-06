@@ -1,3 +1,5 @@
+
+
 const counter = document.getElementById('counter')
 const updatecounter = async () => {
 const data = await fetch('https://api.countapi.xyz/hit/dalpfvisite/visits')
@@ -7,6 +9,8 @@ counter.innerHTML = count.value
 counter.style.filter = 'blur(0)'
 }
 updatecounter();
+
+/*require tout mes classe*/
 
 let close1 = document.querySelector('.close1')
 let close2 = document.querySelector('.close2')
