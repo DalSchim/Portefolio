@@ -1,95 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script> 
-    <title>Guillaume portfolio</title>
+    <title>Document</title>
 </head>
+
 <body>
-    
-    <header>
 
-    <h1> DalSch</h1>
+<header>
+    <h1>Guillaume</h1>
+    <nav>
+        <ul>
+            <li><a href="#section1">Menu</a></li>
+            <li><a href="#section2">My Skills</a></li>
+            <li><a href="#section3">Who I am</a></li>
+            <li><a href="#section4">My Projects</a></li>
+        </ul>
+    </nav>
+    <div>
+        <iconify-icon icon="material-symbols:info-outline-rounded" onclick="toggleList()" class="devlop" ></iconify-icon>
+        <ul id="list" class="hidden">
+            <li><a href="https://discord.gg/KYCgXzQ32R" target="_blank"><iconify-icon icon="ic:baseline-discord"></iconify-icon></a></li>
+            <li><a href="mailto:guillaume.gonidou@edu.devici.fr, guillaumegonidou@gmail.com" ><iconify-icon icon="material-symbols:mail"></iconify-icon></a></li>
+            <li><a href="https://github.com/DalSchim" target="_blank"><iconify-icon icon="carbon:logo-github"></iconify-icon></a></li>
+        </ul>
+    </div>
+</header>
 
-    <ul>
-        <li><p class="link ouvrir1">My projects</p></li>
-        <li><p class="link ouvrir2">My skills</p></li>
-        <li><p class="link ouvrir3">Who I am</p></li>
-    </ul>
 
-    <br>
-
-    </header>
-    <main>
-        
-        <div class="photo">
-            <h3>Hello welcome to my portfolio</h3>
+<main>
+<div class="scroll-container">
+    <section id="section1"  class="section">
+        <div>
+            <h2>Hello welcome to my portfolio</h2>
             <img src="img/new.webp" alt="it's me">
-            <div class="info">
-                <h2 id="counter">0></h2><h2>visite</h2>
-            </div>
         </div>
+    </section>
 
-        
-        <div class="projet">
-            <h2>my projet</h2>
-            <img class="close1" src="img/cross.webp" alt="close tab">
-            <div class="grille">
-                <div class="grid-item">
-                    <img class="axe" src="img/projet-d_axe.webp" alt="my first year project">
-                    <p>my first year project</p>
-                </div>
-                <div class="grid-item">
-                    <img class="axe" src="img/projet-d_axe.webp" alt="my first year project">
-                    <p>my first year project</p>
-                </div>
-                
-                    
 
+    <section id="section2" class="section">
+        <h2>My skills</h2>
+
+            <div class="contain">
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/200/null/html-5--v1.png"/>
+                    <hr>
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/200/null/css3.png"/>
+                    <hr>
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/200/null/javascript--v1.png"/>
+                    <hr>
+                    <p>JS</p>
+                </div>
             </div>
-        </div>
 
-        <div class="myskill">
-            <h2>my skills</h2>
-            <img class="close2" src="img/cross.webp" alt="close tab">
-            <div class="skill">
-                <div class="grid-skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="logo html">
+            <div class="contain">
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/200/null/vue-js.png"/>
+                    <hr>
+                    <p>VueJs</p>
                 </div>
-                <div class="grid-skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="logo css">
+                <div class="skill">
+                    <img src="https://img.icons8.com/officel/200/null/php-logo.png"/>
+                    <hr>
+                    <p>CSS</p>
                 </div>
-                <div class="grid-skill">
-                    <img src="https://reussirsaboutiqueenligne.fr/wp-content/uploads/2022/03/comment-creer-un-clone-de-wordle-en-javascript.png" style="width:100% ;" alt="logo js">
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/200/null/tailwindcss.png"/>
+                    <hr>
+                    <p>JS</p>
                 </div>
- 
             </div>
-             
-        </div>
 
-        <div class="whoiam">
-            <h2>who i am</h2>
-            <img class="close3" src="img/cross.webp" alt="close tab">
-            <div class="e3">
-                <img class="me" src="img/ProfilePicturePhoto.webp" alt="">
-                <p>Hello my name is Guillaume I am a student in web development</p>
-                <p>my discord:DalSchim#9341</p>
-                <p>my email: guillaume.gonidou@edu.devinc.fr</p>
-            </div>
-            <div class="social">
-                
-            </div>
-        </div>
+    </section>
 
-        
-    </main>
+    <section id="section3" class="section">
+        <!-- Contenu de la section 3 -->
+    </section>
 
-    
+    <section id="section4" class="section">
+        <!-- Contenu de la section 4 -->
+    </section>
+</div>
+</main>
+
+<footer>
+    <a href="#" id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+        <iconify-icon class="fas fa-arrow-up" icon="material-symbols:keyboard-double-arrow-up"></iconify-icon>
+    </a>
+</footer>
+
 </body>
+
+<script src="script.js"></script>
 </html>
+
+
+
+

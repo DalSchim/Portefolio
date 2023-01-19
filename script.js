@@ -1,0 +1,32 @@
+function toggleList() {
+    // Récupère l'élément de la liste
+    var list = document.getElementById("list");
+
+    // Vérifie si la liste est cachée ou visible
+    if (list.classList.contains("hidden")) {
+        // Affiche la liste
+        list.classList.remove("hidden");
+    } else {
+        // Cache la liste
+        list.classList.add("hidden");
+    }
+}
+
+
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+}
+
+// Lorsque l'utilisateur clique sur le bouton, retourne en haut de la page
+document.getElementById("topBtn").addEventListener("click", function(){
+    document.body.scrollTop = 0; // Pour Safari
+    document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+});
