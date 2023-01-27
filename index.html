@@ -23,8 +23,7 @@
         <ul>
             <li><a href="#section1">Menu</a></li>
             <li><a href="#section2">My Skills</a></li>
-            <li><a href="#section3">Who I am</a></li>
-            <li><a href="#section4">My Projects</a></li>
+            <li><a href="#section3">My Projects</a></li>
         </ul>
     </nav>
     <div>
@@ -40,9 +39,10 @@
 
 <main>
 <div class="scroll-container">
+
     <section id="section1"  class="section">
         <div>
-            <h2>Hello welcome to my portfolio</h2>
+            <h2>Hello welcome to my portfolio <br> my name is Guillaume Gonidou i am a web front develop</h2>
             <img src="img/new.webp" alt="it's me">
         </div>
     </section>
@@ -94,11 +94,63 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis deserunt dicta dolore doloremque maxime quis repellendus. Accusamus beatae culpa molestias quas vel! Delectus eius libero saepe. Animi, mollitia, quam.</div>
-                <div class="swiper-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur fugit hic impedit necessitatibus nulla praesentium quam ratione repellat sed, sequi. Cum deserunt ipsa iure magnam officia qui quos sapiente totam.</div>
-                <div class="swiper-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur at consequuntur deserunt dicta doloremque eveniet facilis harum magnam maiores mollitia nostrum numquam obcaecati optio, quibusdam sint totam voluptate voluptatem?</div>
-                <div class="swiper-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur at consequuntur deserunt dicta doloremque eveniet facilis harum magnam maiores mollitia nostrum numquam obcaecati optio, quibusdam sint totam voluptate voluptatem?</div>
-                ...
+                <div class="swiper-slide">
+
+                    <div class="produitp">
+
+                        <div class="images">
+                            <div  class="image">
+                                <img src="img/pokedeximg1.jpg" alt="SecretaireVitrine " onclick="previewImage(this)">
+                                <img src="img/pokedeximg2.jpg" alt="SecretaireVitrine" onclick="previewImage(this)">
+                                <img src="img/pokedeximg3.jpg" alt="SecretaireVitrine" onclick="previewImage(this)">
+                            </div>
+                            <div>
+                                <img id="displayed-image" class="imp" src="img/pokedeximg1.jpg" alt="">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text">
+                            <div class="des">
+                                <h2>Pokedex Api</h2>
+                                <p>création d'un pokedex en utilisent l'api pokeApi on n'a utiliser les langage de programtion HTML, CSS, JS</p>
+                                <div class="link">
+                                <a href=""><button class="add">Github</button></a>
+                                <a href=""><button class="add">Voir</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="produitp">
+                        <div class="images">
+                            <div  class="image">
+                                <img src="img/bap1.jpg" alt="SecretaireVitrine " onclick="previewImage2(this)">
+                                <img src="img/bap2.jpg" alt="SecretaireVitrine" onclick="previewImage2(this)">
+                                <img src="img/bap3.jpg" alt="SecretaireVitrine" onclick="previewImage2(this)">
+                            </div>
+                            <div>
+                                <img id="displayed-image2" class="imp" src="img/bap1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="text">
+                            <div class="des">
+                                <h2>Pokedex Api</h2>
+                                <p>création d'un site web pour entreprise les meuble circulaires</p>
+
+                                <div class="link">
+                                <button class="add">Voir</button>
+                                <button class="add">Voir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -106,16 +158,10 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
+        </div>
             <!-- If we need scrollbar -->
-
-
-
     </section>
 
-    <section id="section4" class="section">
-        <!-- Contenu de la section 4 -->
-    </section>
 </div>
 </main>
 

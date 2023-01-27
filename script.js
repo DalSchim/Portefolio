@@ -24,7 +24,6 @@ function scrollFunction() {
         document.getElementById("topBtn").style.display = "none";
     }
 }
-
 // Lorsque l'utilisateur clique sur le bouton, retourne en haut de la page
 document.getElementById("topBtn").addEventListener("click", function(){
     document.body.scrollTop = 0; // Pour Safari
@@ -51,5 +50,17 @@ const swiper = new Swiper('.swiper', {
 
 
 });
+
+
+function previewImage(image) {
+    var displayedImage = document.getElementById("displayed-image");
+    displayedImage.src = image.src;
+}
+
+function previewImage2(image2) {
+    var displayedImage2 = document.getElementById("displayed-image2");
+    displayedImage2.src = image2.src;
+}
+
 
 

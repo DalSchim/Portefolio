@@ -8,6 +8,7 @@
 }
 
 .section {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -56,6 +57,11 @@ header div ul li iconify-icon:hover {
   color: #59D7FF;
   rotate: -15deg;
 }
+@media screen and (max-width: 400px) {
+  header nav {
+    display: none;
+  }
+}
 header nav ul {
   background-color: rgba(237, 237, 237, 0.4);
   display: flex;
@@ -90,22 +96,34 @@ header nav ul li a:hover::after {
   width: 100%;
 }
 
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #section1 img {
-  height: 70vh;
   border-radius: 90%;
   transition: 0.4s;
 }
 #section1 img:hover {
+  transition: 0.4s;
   box-shadow: 0px -30px 50px rgba(89, 216, 255, 0.6588235294);
-  height: 75vh;
 }
 #section1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 }
 #section1 h2 {
-  left: 0;
+  left: 0px;
   position: relative;
+}
+@media screen and (max-width: 400px) {
+  #section1 h2 {
+    text-align: center;
+  }
 }
 
 #section2, #section4 {
@@ -115,34 +133,110 @@ header nav ul li a:hover::after {
 #section2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   font-size: 2em;
+  margin: auto;
 }
 #section2 h2 {
   color: white;
 }
 #section2 .contain {
-  margin-top: 45px;
-  gap: 70px;
+  gap: 45px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 #section2 .contain .skill {
+  margin-top: 10px;
+  height: auto;
   border-radius: 6px;
   background: white;
 }
+@media screen and (max-width: 400px) {
+  #section2 .contain .skill {
+    width: 10vh;
+  }
+}
 #section2 .contain .skill img {
-  width: 30vh;
+  width: 20vh;
+}
+@media screen and (max-width: 400px) {
+  #section2 .contain .skill img {
+    width: 10vh;
+  }
 }
 #section2 .contain .skill hr {
   border: #59D7FF 2px solid;
   width: 100%;
 }
 
-#section4 .swiper {
+#section3 .swiper {
   width: 100%;
   height: 100%;
+}
+#section3 .swiper .produitp {
+  margin: auto;
+  padding-top: 150px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 45px;
+}
+#section3 .swiper .produitp .images {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  gap: 34px;
+}
+#section3 .swiper .produitp .images .image {
+  align-items: center;
+  gap: 45px;
+  display: flex;
+  flex-direction: column;
+}
+#section3 .swiper .produitp .images .image img {
+  object-fit: cover;
+  width: 15vh;
+  height: 15vh;
+}
+#section3 .swiper .produitp .images .imp {
+  width: 60vh;
+  height: 60vh;
+  object-fit: cover;
+  border: rgba(89, 215, 255, 0.55) solid 15px;
+  border-radius: 20px;
+}
+#section3 .swiper .produitp hr {
+  border: 2px solid #58d5fe;
+}
+#section3 .swiper .produitp .text {
+  width: 100%;
+}
+#section3 .swiper .produitp .des {
+  display: flex;
+  gap: 45px;
+  width: 450px;
+  flex-direction: column;
+}
+#section3 .swiper .produitp .des .link {
+  display: flex;
+}
+#section3 .swiper .produitp .des .add {
+  align-content: center;
+  text-align: center;
+  background: hsl(162deg, 10%, 20%);
+  border-radius: 60px;
+  color: white;
+  width: 20vh;
+  padding: 13px 36px;
+}
+#section3 .swiper .produitp .des .add:hover {
+  background: hsl(195deg, 99%, 67%);
+}
+#section3 .swiper .produitp .des div {
+  display: flex;
+  gap: 15px;
 }
 
 footer #topBtn {

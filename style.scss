@@ -11,6 +11,7 @@
 
 
 .section {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -71,6 +72,10 @@ header{
 
 
   nav{
+    @media screen and (max-width:400px) {
+  display: none;
+    }
+
     ul{
       background-color: rgba(237, 237, 237, 0.400);
       display: flex;
@@ -115,22 +120,37 @@ header{
 
 
 #section1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img{
-    height: 70vh;
+
+
+
     border-radius: 90%;
     transition: 0.4s;
     &:hover{
+      transition: 0.4s;
+
         box-shadow: 0px -30px 50px #59d8ffa8;
-        height: 75vh;
+
     }
   }
   div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
   }
+
   h2{
-    left: 0;
+    left: 0px;
     position: relative;
+    @media screen and (max-width:400px) {
+      text-align: center;
+
+    }
 
   }
 }
@@ -147,22 +167,32 @@ header{
 #section2{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   font-size: 2em;
+  margin: auto;
   h2{
     color: white;
   }
   .contain{
-    margin-top:45px ;
-    gap: 70px;
+    gap: 45px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     .skill{
+      margin-top: 10px;
+      @media screen and (max-width:400px) {
+        width: 10vh;
+      }
+      height: auto ;
       border-radius: 6px;
       background: white;
       img{
-        width: 30vh;
+        width:20vh ;
+        @media screen and (max-width:400px) {
+          width: 10vh;
+        }
+
       }
       hr{
         border: #59D7FF 2px solid;
@@ -174,11 +204,82 @@ header{
 }
 
 
-#section4{
+#section3{
   .swiper {
     width: 100%;
     height: 100%;
+    .swiper-slide{}
+
+    .produitp{
+      margin: auto;
+      padding-top:150px;
+      display: flex;
+      width: 100%;
+
+
+      justify-content: center;
+      gap: 45px;
+      .images{
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        gap: 34px;
+        .image{
+          align-items: center;
+          gap: 45px;
+          display: flex;
+          flex-direction: column;
+          img{
+            object-fit: cover;
+            width: 15vh;
+            height: 15vh;
+          }
+        }
+        .imp{
+          width:  60vh;
+          height: 60vh;
+          object-fit: cover;
+          border: rgba(89, 215, 255, 0.55) solid 15px;
+          border-radius: 20px;
+        }
+      }
+      hr{
+        border: 2px solid #58d5fe;
+      }
+      .text{
+        width: 100%;
+      }
+      .des{
+        display: flex;
+        gap: 45px;
+        width: 450px;
+        flex-direction: column;
+        .link{
+          display: flex;
+        }
+        .add{
+          align-content: center;
+          text-align: center;
+          background:hsla(162, 10%, 20%, 1);
+          border-radius: 60px;
+          color: white;
+          width: 20vh;
+          padding: 13px 36px;
+          &:hover{
+            background: hsl(195, 99%, 67%);
+          }
+        }
+        div{
+          display: flex;
+          gap: 15px;
+        }
+      }
+    }
+
+
+
   }
+
 
 }
 
@@ -200,3 +301,5 @@ footer{
     }
   }
 }
+
+
