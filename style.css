@@ -122,7 +122,10 @@ header nav ul li a:hover::after {
 }
 @media screen and (max-width: 400px) {
   #section1 h2 {
+    font-size: 22px;
     text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -171,9 +174,20 @@ header nav ul li a:hover::after {
   width: 100%;
 }
 
+@media screen and (max-width: 400px) {
+  #section3 {
+    padding-bottom: 30px;
+  }
+}
 #section3 .swiper {
   width: 100%;
   height: 100%;
+}
+#section3 .swiper .swiper-slide {
+  width: 100%;
+}
+#section3 .swiper .swiper-wrapper {
+  width: 100%;
 }
 #section3 .swiper .produitp {
   margin: auto;
@@ -195,17 +209,36 @@ header nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 400px) {
+  #section3 .swiper .produitp .images .image {
+    flex-direction: row;
+  }
+}
 #section3 .swiper .produitp .images .image img {
+  cursor: pointer;
   object-fit: cover;
   width: 15vh;
   height: 15vh;
 }
+@media screen and (max-width: 400px) {
+  #section3 .swiper .produitp .images .image img {
+    width: 85px;
+    height: 85px;
+  }
+}
 #section3 .swiper .produitp .images .imp {
-  width: 60vh;
-  height: 60vh;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border: rgba(89, 215, 255, 0.55) solid 15px;
   border-radius: 20px;
+}
+@media screen and (max-width: 400px) {
+  #section3 .swiper .produitp .images .imp {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 #section3 .swiper .produitp hr {
   border: 2px solid #58d5fe;
@@ -216,11 +249,27 @@ header nav ul li a:hover::after {
 #section3 .swiper .produitp .des {
   display: flex;
   gap: 45px;
-  width: 450px;
+  width: 100%;
   flex-direction: column;
+}
+#section3 .swiper .produitp .des a {
+  color: white;
+  text-decoration: none;
+}
+#section3 .swiper .produitp .des h2 {
+  padding-left: 32px;
+}
+#section3 .swiper .produitp .des p {
+  padding-left: 32px;
+  width: 100%;
 }
 #section3 .swiper .produitp .des .link {
   display: flex;
+}
+@media screen and (max-width: 400px) {
+  #section3 .swiper .produitp .des .link {
+    flex-direction: column;
+  }
 }
 #section3 .swiper .produitp .des .add {
   align-content: center;
@@ -228,7 +277,7 @@ header nav ul li a:hover::after {
   background: hsl(162deg, 10%, 20%);
   border-radius: 60px;
   color: white;
-  width: 20vh;
+  width: 150px;
   padding: 13px 36px;
 }
 #section3 .swiper .produitp .des .add:hover {
@@ -240,6 +289,7 @@ header nav ul li a:hover::after {
 }
 
 footer #topBtn {
+  z-index: 1000;
   display: none; /* cache le bouton par défaut */
   position: fixed; /* fixe la position en bas à droite de l'écran */
   bottom: 20px;
@@ -252,6 +302,22 @@ footer #topBtn {
 }
 footer #topBtn:hover {
   color: #59D7FF;
+}
+
+@media screen and (max-width: 400px) {
+  body .image {
+    display: flex;
+    flex-direction: row;
+  }
+  body #section3 {
+    height: 100vh;
+  }
+  body #section3 .produitp {
+    flex-direction: column;
+  }
+  body #section3 .images {
+    flex-direction: column-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Lexend', sans-serif;
   scroll-behavior: smooth;
+
 }
 
 
@@ -146,9 +147,13 @@ header{
 
   h2{
     left: 0px;
+
     position: relative;
     @media screen and (max-width:400px) {
+      font-size: 22px;
       text-align: center;
+      padding-left: 32px;
+      padding-right: 32px;
 
     }
 
@@ -205,18 +210,26 @@ header{
 
 
 #section3{
+
+  @media screen and (max-width:400px){
+    padding-bottom: 30px;
+  }
   .swiper {
     width: 100%;
     height: 100%;
-    .swiper-slide{}
+    .swiper-slide{
+      width: 100%;
+
+    }
+    .swiper-wrapper{
+      width: 100%;
+    }
 
     .produitp{
       margin: auto;
       padding-top:150px;
       display: flex;
       width: 100%;
-
-
       justify-content: center;
       gap: 45px;
       .images{
@@ -229,18 +242,31 @@ header{
           gap: 45px;
           display: flex;
           flex-direction: column;
+          @media screen and (max-width:400px) {
+            flex-direction: row;
+          }
           img{
+            cursor: pointer;
             object-fit: cover;
             width: 15vh;
             height: 15vh;
+            @media screen and (max-width:400px) {
+              width: 85px;
+              height: 85px;
+            }
           }
         }
         .imp{
-          width:  60vh;
-          height: 60vh;
+          width:  400px;
+          height: 400px;
           object-fit: cover;
           border: rgba(89, 215, 255, 0.55) solid 15px;
           border-radius: 20px;
+          @media screen and (max-width:400px) {
+            width:  300px;
+            height: 300px;
+            object-fit: cover;
+          }
         }
       }
       hr{
@@ -248,14 +274,29 @@ header{
       }
       .text{
         width: 100%;
+
       }
       .des{
         display: flex;
         gap: 45px;
-        width: 450px;
+        width: 100%;
         flex-direction: column;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+        h2{
+          padding-left: 32px;
+        }
+        p{
+          padding-left: 32px;
+          width: 100%;
+        }
         .link{
           display: flex;
+          @media screen and (max-width:400px){
+            flex-direction: column;
+          }
         }
         .add{
           align-content: center;
@@ -263,7 +304,7 @@ header{
           background:hsla(162, 10%, 20%, 1);
           border-radius: 60px;
           color: white;
-          width: 20vh;
+          width: 150px;
           padding: 13px 36px;
           &:hover{
             background: hsl(195, 99%, 67%);
@@ -287,6 +328,7 @@ header{
 
 footer{
   #topBtn {
+    z-index:1000;
     display: none; /* cache le bouton par défaut */
     position: fixed; /* fixe la position en bas à droite de l'écran */
     bottom: 20px;
@@ -303,3 +345,26 @@ footer{
 }
 
 
+
+@media screen and (max-width:400px) {
+  body{
+
+    .image{
+      display: flex;
+      flex-direction: row;
+    }
+
+
+
+    #section3{
+      height: 100vh;
+      .produitp{
+        flex-direction: column;
+      }
+
+      .images{
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
