@@ -312,9 +312,18 @@ footer #topBtn:hover {
   body #section3 {
     height: 100vh;
   }
+}
+@media screen and (max-width: 400px) and (max-width: 400px) {
+  body #section3 {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
   body #section3 .produitp {
     flex-direction: column;
   }
+}
+@media screen and (max-width: 400px) {
   body #section3 .images {
     flex-direction: column-reverse;
   }
