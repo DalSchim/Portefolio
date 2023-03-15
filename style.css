@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+  font-size: 15px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -100,7 +104,7 @@ header nav ul li a:hover::after {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section1 {
     align-items: center;
     flex-direction: column;
@@ -111,7 +115,7 @@ header nav ul li a:hover::after {
   position: absolute;
   top: 20%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section1 h2 {
     position: relative;
     top: 0px;
@@ -124,7 +128,7 @@ header nav ul li a:hover::after {
   bottom: 0;
   border-radius: 360px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section1 img {
     position: relative;
     bottom: 0;
@@ -159,7 +163,7 @@ header nav ul li a:hover::after {
   border-radius: 6px;
   background: white;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section2 .contain .skill {
     width: 10vh;
   }
@@ -167,7 +171,7 @@ header nav ul li a:hover::after {
 #section2 .contain .skill img {
   width: 20vh;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section2 .contain .skill img {
     width: 10vh;
   }
@@ -176,8 +180,17 @@ header nav ul li a:hover::after {
   border: #59D7FF 2px solid;
   width: 100%;
 }
+#section2 .contain .skill p {
+  padding: 10px;
+  font-size: 1em;
+}
+@media screen and (max-width: 420px) {
+  #section2 .contain .skill p {
+    font-size: 0.5em;
+  }
+}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section3 {
     padding-bottom: 30px;
   }
@@ -212,7 +225,7 @@ header nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section3 .swiper .produitp .images .image {
     flex-direction: row;
   }
@@ -223,7 +236,7 @@ header nav ul li a:hover::after {
   width: 15vh;
   height: 15vh;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section3 .swiper .produitp .images .image img {
     width: 85px;
     height: 85px;
@@ -236,7 +249,7 @@ header nav ul li a:hover::after {
   border: rgba(89, 215, 255, 0.55) solid 15px;
   border-radius: 20px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section3 .swiper .produitp .images .imp {
     width: 300px;
     height: 300px;
@@ -269,8 +282,9 @@ header nav ul li a:hover::after {
 #section3 .swiper .produitp .des .link {
   display: flex;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #section3 .swiper .produitp .des .link {
+    padding-left: 25px;
     flex-direction: column;
   }
 }
@@ -307,7 +321,7 @@ footer #topBtn:hover {
   color: #59D7FF;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   body .image {
     display: flex;
     flex-direction: row;
@@ -316,19 +330,25 @@ footer #topBtn:hover {
     height: 100vh;
   }
 }
-@media screen and (max-width: 400px) and (max-width: 400px) {
+@media screen and (max-width: 420px) and (max-width: 420px) {
   body #section3 {
     height: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   body #section3 .produitp {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   body #section3 .images {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 420px) {
+  .zone {
+    display: flex;
+    justify-content: center;
   }
 }
 

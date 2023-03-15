@@ -30,8 +30,6 @@ document.getElementById("topBtn").addEventListener("click", function(){
     document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
 });
 
-
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
